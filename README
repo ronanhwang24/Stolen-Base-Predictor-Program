@@ -1,0 +1,35 @@
+/**********************************************************
+* Project: Stolen Base Predictor
+* README
+* Ronan Hwang
+* October 3rd 2024
+*********************************************************/
+
+Program Purpose:
+    - The purpose of this program is to predict whether or not a baserunner 
+        steals second base based on the runner's jump, the pitch velocity and
+        the catcher.
+
+Imports:
+    - For this program, we decided to use three data tables:
+        - fulltable.csv
+            - This data table contains all the statcast stolen base data from
+                the 2024 MLB season.
+        - poptime.csv
+            - This data table contains all the catcher's fielding data from 
+                the 2024 MLB season.
+        - runningsplits.csv
+            - This data table contains all the running splits from 0 to 90 feet
+                for baserunners in the MLB.
+Using dataframes:
+    - I used the fulltable.csv by filtering out the dataframe so that only 
+        the user inputted baserunner remained in the dataframe.
+    - I used the poptime.csv dataframe to get the 2B pop time on a stolen base 
+        attempt on the user inputted cathcher.
+    - I used the runningsplits.csv dataframe to find the running splits from \
+        0 to 90 feet for the user inputted baserunner. 
+Acknowledgements: 
+    - I would like to thank Baseball Savent for providing the data used for 
+        this project. I would also like to acknowledge that I used resources 
+        from StackOverflow, ChatGPT and GeeksForGeeks. 
+
